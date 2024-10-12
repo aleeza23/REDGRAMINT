@@ -1,0 +1,15 @@
+.banner {
+    .swiper1, .swiper2 {
+        min-height: 60vh; // Ensure consistent height
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-poppins);
+
+        img {
+            width: 100%;
+            height: auto; // Maintain aspect ratio
+            object-fit: contain; // Ensure image covers the entire area
+        }
+    }
+}
