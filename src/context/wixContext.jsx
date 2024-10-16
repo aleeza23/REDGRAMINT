@@ -3,7 +3,7 @@ import { createClient, OAuthStrategy } from "@wix/sdk";
 import { products, collections } from "@wix/stores";
 import { currentCart } from "@wix/ecom";
 import Cookies from "js-cookie";
-import { useAlert } from "react-alert";
+// import { useAlert } from "react-alert";
 
 // Create context
 const WixContext = createContext();
@@ -22,7 +22,7 @@ const WixProvider = ({ children }) => {
     const [categoryProducts, setCategoryProducts] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [formData, setFormData] = useState({}); 
-    const alert = useAlert();
+    // const alert = useAlert();
 
     async function fetchProducts() {
         try {
@@ -102,7 +102,7 @@ const WixProvider = ({ children }) => {
                 item._id === updateData[0] ? { ...item, quantity: updateData[1] } : item
             );
             await updateCurrentCartLineItemQuantity(updatedItems);
-            alert.success("Quantity updated!");
+            // alert.success("Quantity updated!");
         } catch (error) {
             console.error("Error updating cart item quantity:", error);
         } finally {
@@ -116,11 +116,11 @@ const WixProvider = ({ children }) => {
             const response = await myWixClient.currentCart.removeLineItemsFromCurrentCart([itemId]);
             setCart(response.cart);
             setIsLoading(false);
-            alert.success("Item removed from the cart");
+            // alert.success("Item removed from the cart");
         } catch (error) {
             console.error("Error removing cart item: ", error);
             setIsLoading(false);
-            alert.error("Failed to remove item from the cart");
+            // alert.error("Failed to remove item from the cart");
         }
     }
 

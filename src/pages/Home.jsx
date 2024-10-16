@@ -2,7 +2,6 @@ import React, { Suspense, lazy } from 'react';
 import Header from '../compoenents/Header';
 import HeroSlider from '../compoenents/HeroSlider';
 import Footer from '../compoenents/Footer';
-import SkeletonLoader from '../compoenents/Skeleton';
 
 // Dynamically import ProductsList and Categories
 const ProductsList = lazy(() => import('../compoenents/ProductsList'));

@@ -6,13 +6,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { useWixContext } from "../context/wixContext";
 import { media as wixMedia } from '@wix/sdk';
 import emailjs from 'emailjs-com';
-import { useAlert } from "react-alert"
+// import { useAlert } from "react-alert"
 import { img } from "framer-motion/m";
 
 const ConfirmOrder = () => {
     const navigate = useNavigate();
     const { formData, cart } = useWixContext();
-    const alert = useAlert()
+    // const alert = useAlert()
 
     // Calculate subtotal from the cart
     const subtotal = cart?.lineItems?.reduce((acc, item) => acc + item.quantity * item.price.amount, 0).toFixed(2);
@@ -42,7 +42,7 @@ const ConfirmOrder = () => {
 
             // Send email using EmailJS
             const response = await emailjs.send('service_piylrr8', 'template_ifdlaoj', emailData, 'W9DUCVYUh_GJvPgxI');
-            alert.success('Order Placed!');
+            // alert.success('Order Placed!');
 
             // Redirect to success page
             navigate('/success');
