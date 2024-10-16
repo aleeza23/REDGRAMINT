@@ -5,13 +5,13 @@ import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import styles from "../assets/styles/SingleProduct.module.scss";
 import Navbar from "../compoenents/Header";
 import Footer from "../compoenents/Footer";
-import { useAlert } from "react-alert";
+// import { useAlert } from "react-alert";
 import { useWixContext } from "../context/wixContext";
 
 const SingleProduct = () => {
     const { productList, addToCart } = useWixContext()
     let { slug } = useParams();
-    const alert = useAlert();
+    // const alert = useAlert();
     const [preview, setpreview] = useState(0)
     const product = productList?.find((product) => product._id === slug);
     
