@@ -1,11 +1,10 @@
 import React, { Fragment, useState } from "react";
 import { useParams } from "react-router-dom";
-import { AiOutlineCloseCircle, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+import {  AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import styles from "../assets/styles/SingleProduct.module.scss";
 import Navbar from "../compoenents/Header";
 import Footer from "../compoenents/Footer";
-import { sampleProducts } from "../data/ProductsData";
 import { useAlert } from "react-alert";
 import { useWixContext } from "../context/wixContext";
 
@@ -45,8 +44,7 @@ const SingleProduct = () => {
     //     alert.success("Item Added Into the Cart");
     // }
     return (
-        <Fragment>
-
+        product && <Fragment>
             <Navbar />
             <div className={styles.product_details}>
                 <div className="container mb-5">
@@ -54,8 +52,8 @@ const SingleProduct = () => {
                         <div className="col-md-6">
                             {product?.media?.items && (
                                 <>
-                                    <div className={styles.preview_image}>
-                                        <img src={product?.media?.items[preview].image?.url} alt="item" />
+                                    <div className="rounded" >
+                                        <img src={product?.media?.items[preview].image?.url} className="img-fluid rounded" alt="item" />
                                     </div>
                                     {/* product section  */}
                                     <div className={styles.products_container}>

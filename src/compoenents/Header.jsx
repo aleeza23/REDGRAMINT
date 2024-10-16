@@ -42,7 +42,31 @@ const Header = () => {
                             src={logo}
                             alt=""
                         />
+                       
                     </div>
+                    <ul className="block mt-3 ms-auto d-md-none text-decoration-none ">
+                        <li className="cart me-4 " style={{ position: 'relative', listStyle : 'none' }}>
+                                <Link to="/cart">
+                                    <AiOutlineShoppingCart className="icon text-white " size={25} />
+                                </Link>
+                                {cart.lineItems?.length > 0 && <p
+                                    style={{
+                                        position: 'absolute',
+                                        top: '-10px',
+                                        right: '-10px',
+                                        background: 'red',
+                                        color: 'white',
+                                        borderRadius: '50%',
+                                        padding: '2px 8px',
+                                        fontSize: '12px',
+                                    }}
+                                >
+                                    {cart.lineItems?.length}
+                                </p>}
+                            </li>
+                            
+                        </ul>
+
                     <div className="search">
                         <Search />
                     </div>
@@ -88,7 +112,9 @@ const Header = () => {
                             </>}
                         </ul>
                     </div>
+                    
                     <div className="app__navbar-menu">
+                                              
                         <HiMenuAlt3 onClick={() => setToggle(true)} />
 
                         {toggle && (

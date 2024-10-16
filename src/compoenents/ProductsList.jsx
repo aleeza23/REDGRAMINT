@@ -38,7 +38,7 @@ const ProductsList = ({ categoryId, link, title }) => {
                         className={styles.products_container_branch}
                         ref={scrollRef}
                     >
-                        {categoryProducts.map((product, index) => (
+                        {categoryProducts && categoryProducts.map((product, index) => (
                             <div className={styles.item} key={index}>
                                 <img
                                     src={product?.media?.mainMedia?.image?.url}

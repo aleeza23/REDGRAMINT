@@ -14,7 +14,7 @@ const Footer = () => {
                                 <h5>About Us</h5>
                                 <div>
                                     <p>
-                                        We are manufacturers of all kinds of above Items and can offer best quality above Items in most moderate prices. Our customers always appreciate our quality, reasonable prices and delivery service.
+                                        We offer premium leather hats that combine durability with timeless style, providing superior comfort and elegance for any occasion.
                                     </p>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                                 <h5>Contact Information</h5>
                                 <div>
                                     <p>
-                                    Address: TOHEED TOWN, DEFENCE ROAD, Sialkot Punjab, Pakistan
+                                        Address: TOHEED TOWN, DEFENCE ROAD, Sialkot Punjab, Pakistan
                                     </p>
                                     <input type="email" placeholder="Enter your message..." />
                                     <button>

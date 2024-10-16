@@ -7,7 +7,7 @@ import { useWixContext } from "../context/wixContext";
 
 const Checkout = () => {
     const navigate = useNavigate();
-    const { setFormData } = useWixContext(); // Destructure setFormData from context
+    const { setFormData, cart } = useWixContext(); // Destructure setFormData from context
     const [formState, setFormState] = useState({
         name: '',
         address: '',
@@ -28,7 +28,7 @@ const Checkout = () => {
     };
 
     return (
-        <Fragment>
+        cart && <Fragment>
             <Navbar />
             <div className={styles.shipping}>
                 <div className={styles.shipping_container}>

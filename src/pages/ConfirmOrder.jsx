@@ -22,7 +22,7 @@ const ConfirmOrder = () => {
         const orderDetails = cart.lineItems.map(item => ({
             productName: item.productName?.original,
             quantity: item.quantity,
-            imageUrl:item.image,
+            imageUrl: item.image,
             totalPrice: `₨${item.price.amount}`
         }));
 
@@ -42,7 +42,7 @@ const ConfirmOrder = () => {
 
             // Send email using EmailJS
             const response = await emailjs.send('service_piylrr8', 'template_ifdlaoj', emailData, 'W9DUCVYUh_GJvPgxI');
-            alert.success('Email successfully sent!');
+            alert.success('Order Placed!');
 
             // Redirect to success page
             navigate('/success');
@@ -52,7 +52,7 @@ const ConfirmOrder = () => {
 
     }
     return (
-        <Fragment>
+        formData && <Fragment>
             <Navbar />
             <div className={styles.confirm}>
                 <div className="container">

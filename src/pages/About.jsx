@@ -14,24 +14,25 @@ const About = () => {
         {
             icon: <FcAutomotive size={60} />,
             title: "Free Delivery",
-            description: "We manufacture high-quality sports equipment with timely delivery.",
+            description: "We offer high-quality leather products with reliable and timely delivery.",
         },
         {
             icon: <FcCurrencyExchange size={60} />,
             title: "100% Cash Back",
-            description: "Enjoy a full cash-back guarantee on our sports products.",
+            description: "Enjoy a full cash-back guarantee on our premium leather items.",
         },
         {
             icon: <FcRating size={60} />,
             title: "Quality Product",
-            description: "Our sports products are crafted to meet the highest quality standards.",
+            description: "Our leather products are crafted to meet the highest standards of quality.",
         },
         {
             icon: <FcCustomerSupport size={60} />,
             title: "24/7 Support",
-            description: "Get round-the-clock support for all your sports equipment needs.",
+            description: "Receive round-the-clock support for all your leather product inquiries.",
         },
     ];
+    
     
     return (
         <Fragment>
@@ -60,7 +61,7 @@ const About = () => {
                                         History
                                     </h4>
                                     <p>
-                                        We are manufacturers of all kinds of above Items and can offer best quality above Items in most moderate prices. Our customers always appreciate our quality, reasonable prices and delivery service.
+                                    We offer premium leather hats that combine durability with timeless style, providing superior comfort and elegance for any occasion. Our exquisite leather jackets are designed for both fashion and function, ensuring unmatched quality and a sophisticated look. For equestrian enthusiasts, our horse riding accessories are crafted for reliability and comfort, so you can ride with confidence.
                                     </p>
                                     <a href="https://wa.me/03080123011" target="_blank" rel="noopener noreferrer">
                                         <button>Contact Us</button>

@@ -19,58 +19,13 @@ const Contact = () => {
         <Fragment>
 
             <Navbar />
-            <div className={styles.contact}>
+            <div className={styles.contact}>                
                 <div className={styles.contact_title}>
                     <div className="container">
                         <h3>Contact Us</h3>
                     </div>
                 </div>
-                <div className={styles.contact_info}>
-                    <div className="container mt-5">
-                        <div className="row g-3">
-                            <div className="col-md-6">
-                                <div className={styles.about}>
-                                    <h4>Information About Us</h4>
-                                    <p className="mt-3">
-                                        We are manufacturers of all kinds of above Items and can offer best quality above Items in most moderate prices. Our customers always appreciate our quality, reasonable prices and delivery service.
-                                    </p>
-                                    <div>
-                                        <span>
-                                            <FaFacebook size={40} />
-                                        </span>
-                                        <span>
-                                            <BsInstagram size={40} />
-                                        </span>
-                                        <span>
-                                            <BsYoutube size={40} />
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className={styles.contact}>
-                                    <h4>Contact Way</h4>
-                                    <div className="row g-3 mt-2">
-                                        {contacts.map((contact, index) => (
-                                            <div
-                                                className="col-md-6"
-                                                key={index}
-                                            >
-                                                <div className="d-flex align-items-center">
-                                                    <div>{contact.icon}</div>
-                                                    <div className="ms-3">
-                                                        <p>{contact.text1}</p>
-                                                        <p>{contact.text2}</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div className={styles.contact_form}>
                     <div className="container">
                         <div className="row g-3">
@@ -119,6 +74,54 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
+                
+                <div className={styles.contact_info}>
+                    <div className="container mt-5">
+                        <div className="row g-3">
+                            <div className="col-md-6">
+                                <div className={styles.about}>
+                                    <h4>Information About Us</h4>
+                                    <p className="mt-3">
+                                    We offer premium leather hats that combine durability with timeless style, providing superior comfort and elegance for any occasion. Our exquisite leather jackets are designed for both fashion and function, ensuring unmatched quality and a sophisticated look. For equestrian enthusiasts, our horse riding accessories are crafted for reliability and comfort, so you can ride with confidence. Additionally, our leather wallets and bags are meticulously designed for practicality and elegance, perfect for keeping your essentials organized in style.
+                                        </p>
+                                    <div>
+                                        <span>
+                                            <FaFacebook size={40} />
+                                        </span>
+                                        <span>
+                                            <BsInstagram size={40} />
+                                        </span>
+                                        <span>
+                                            <BsYoutube size={40} />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className={styles.contact}>
+                                    <h4>Contact Way</h4>
+                                    <div className="row g-3 mt-2">
+                                        {contacts.map((contact, index) => (
+                                            <div
+                                                className="col-md-6"
+                                                key={index}
+                                            >
+                                                <div className="d-flex align-items-center">
+                                                    <div>{contact.icon}</div>
+                                                    <div className="ms-3">
+                                                        <p>{contact.text1}</p>
+                                                        <p>{contact.text2}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
             </div>
             <Footer />
         </Fragment>

@@ -7,13 +7,13 @@ import { useWixContext } from "../context/wixContext";
 
 const Categories = () => {
     const { myWixClient, categories } = useWixContext();
-  
 
-  
+
+
 
 
     return (
-        <div className={styles.category}>
+        categories && <div className={styles.category}>
             <div className="container mb-5 mt-5">
                 <div className="row gy-2 gx-4">
                     {categories?.map((item, index) => (
@@ -31,6 +31,7 @@ const Categories = () => {
                 </div>
             </div>
         </div>
+
     );
 };
 

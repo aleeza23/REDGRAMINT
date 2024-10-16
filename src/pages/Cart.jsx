@@ -50,7 +50,7 @@ const Cart = () => {
                                 )}
 
                                 <div>
-                                    {cart.lineItems?.map((item) => (
+                                    {cart && cart.lineItems?.map((item) => (
                                         <Fragment key={item._id}>
                                             <hr />
                                             <div className={styles.cart_item}>

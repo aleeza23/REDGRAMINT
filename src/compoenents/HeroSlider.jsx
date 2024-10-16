@@ -6,12 +6,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay, EffectCreative } from 'swiper/modules';
 import styles from "../assets/styles/HeroSlider.module.scss";
-import slideONE from '../assets/images/1_banner.jpg';
-import slideTWO from '../assets/images/2_banner.jpg';
-import slideTHREE from '../assets/images/3_banner.jpg';
-import slideFOUR from '../assets/images/4_banner.jpg';
-import slideFIVE from '../assets/images/5_banner.jpg';
-import slideSIX from '../assets/images/6_banner.jpg';
+import slideONE from '../assets/images/1_banner.webp';
+import slideTWO from '../assets/images/2_banner.webp';
+import slideTHREE from '../assets/images/3_banner.webp';
+import slideFOUR from '../assets/images/4_banner.webp';
+import slideFIVE from '../assets/images/5_banner.webp';
+import slideSIX from '../assets/images/6_banner.webp';
 
 
 const HeroSlider = () => {
